@@ -39,13 +39,13 @@ function displayBook() {
   for (let i = 0; i < myLibrary.length; i++) {
     const book = myLibrary[i]
 
-     const bookCard = document.createElement("div")
-        bookCard.classList.add("book-card")
+    const bookCard = document.createElement("div")
+    bookCard.classList.add("book-card")
 
 
-        const titleElement = document.createElement("h4")
-        titleElement.textContent = `Title: ${myLibrary[i].title}`
-        bookCard.appendChild(titleElement)
+    const titleElement = document.createElement("h4")
+    titleElement.textContent = `Title: ${myLibrary[i].title}`
+    bookCard.appendChild(titleElement)
 
 
         const authorElement = document.createElement("p")
@@ -68,7 +68,7 @@ function displayBook() {
         readCheckbox.type = "checkbox"
         readCheckbox.checked = book.read // if book.read is true, the checkbox will be checked; otherwise it will be unchecked.
         readCheckbox.id = `read-${i}`
-        readCheckbox.checked = myLibrary[i].read
+        // readCheckbox.checked = myLibrary[i].read (double siehe two lines above)
 
         bookCard.appendChild(readCheckbox)
 
