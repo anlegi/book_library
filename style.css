@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+button {
+  font-family: monospace;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.new-book {
+  margin-bottom: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+}
+
+.new-book:hover {
+  background-color: yellow;
+  border-radius: 5px;
+}
+.new-book-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+}
+
+.new-book-centered:hover {
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+
+.add {
+  padding: 5px;
+  margin-top: 5px;
+  border: solid;
+  border-radius: 5px;
+}
+
+.add:hover {
+  background-color: rgb(114, 223, 114);
+  border-radius: 5px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* width: 100%; */
+  margin-top: 300px;
+}
+
+.book-card {
+  border: solid;
+  background-color: rgb(251, 255, 131);
+  width: 200px;
+  height: 200px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border-radius: 3px;
+  margin: 0.5rem;
+  position: relative;
+  box-shadow: 2px 2px rgb(211, 211, 211);
+}
+
+
+.input {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+  width: 40%;
+}
+
+#dialog {
+  border-radius: 5px;
+}
+
+
+
+.delete {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: solid;
+}
+
+.delete:hover {
+  background-color: rgb(255, 131, 131);
+}

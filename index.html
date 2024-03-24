@@ -4,11 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <button class="add">Add Book</button>
+  <div class="container">
+    <dialog id="dialog">
+      <form>
+        <div class="input">
+          <label>
+            Title
+            <input type="text" name="title" id="title" placeholder="The Kite Runner">
+          </label>
+          <label>
+            Author
+            <input type="text" name="author" id="author" placeholder="Khaled Hosseini"required>
+          </label>
+          <label>
+            Pages
+            <input type="number" name="pages" id="pages" placeholder="372"required>
+          </label>
+          <label>
+            Read
+            <input type="checkbox" id="myCheck" onclick="">
+          </label>
+        </div>
 
+        <div>
+          <button type="submit" class="add">Add Book</button>
+        </div>
+      </form>
+    </dialog>
 
-  <script src="index.js"></script>
+    <div class="btn-container">
+      <button class="new-book new-book-centered">New Book</button>
+    </div>
+    <div class="cards">
+
+    </div>
+    <script src="index.js"></script>
+</div>
 </body>
 </html>
