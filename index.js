@@ -15,6 +15,12 @@ function Book(title, author, pages, read) {
 }
 
 function addBookToLibrary(event) {
+  let form = document.querySelector("form");
+  if (!form.checkValidity()) {
+    form.reportValidity();  // triggers the browser's native form validation UI
+    return;  // Exit the function if the form is not valid
+  }
+  
   event.preventDefault()
 
   let title = document.getElementById("title").value
